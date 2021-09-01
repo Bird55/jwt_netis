@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      {% if title %}
+      <title>{{ title }} - NETIS App</title>
+      {% else %}
+      <title>Welcome to NETIS App.</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>NETIS App: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
